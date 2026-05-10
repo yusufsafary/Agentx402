@@ -642,6 +642,8 @@
     padding: 2rem 3rem;
     display: flex; align-items: center; justify-content: space-between;
     color: #444;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   .footer-logo {
     font-family: var(--font-mono);
@@ -668,6 +670,19 @@
     font-size: 0.65rem;
     color: #2a2a2a;
     letter-spacing: 0.04em;
+  }
+  .footer-orynth {
+    display: flex;
+    align-items: center;
+  }
+  .footer-orynth img {
+    opacity: 0.85;
+    transition: opacity 0.2s, transform 0.2s;
+    border-radius: 4px;
+  }
+  .footer-orynth img:hover {
+    opacity: 1;
+    transform: translateY(-1px);
   }
 
   /* ── HERO CARDS ── */
@@ -843,11 +858,11 @@
       </div>
       <span class="hero-card-arrow">→</span>
     </a>
-    <a href="https://kickstart.easya.io/" target="_blank" rel="noopener" class="hero-card token-card">
+    <a href="https://orynth.dev/projects/agent-x402" target="_blank" rel="noopener" class="hero-card token-card">
       <div class="hero-card-icon token-icon">$AGX</div>
       <div class="hero-card-body">
         <span class="hero-card-title">$AGX402 — Coming soon</span>
-        <span class="hero-card-sub">Launching on EasyA Kickstart</span>
+        <span class="hero-card-sub">Launching on orynth.dev</span>
       </div>
       <span class="hero-card-arrow">→</span>
     </a>
@@ -1078,6 +1093,11 @@
     <li><a href="#">Twitter / X</a></li>
     <li><a href="#">Privacy</a></li>
   </ul>
+  <div class="footer-orynth">
+    <a href="https://orynth.dev/projects/agent-x402" target="_blank" rel="noopener">
+      <img src="https://orynth.dev/api/badge/agent-x402?theme=light&style=default" alt="Featured on Orynth" width="260" height="80" />
+    </a>
+  </div>
   <span class="footer-copy">© 2025 AgentX402. Built on Solana, Base &amp; Tempo.</span>
 </footer>
 
@@ -1120,4 +1140,4 @@
   }
 </script>
 </body>
-</html>
+</html> 
